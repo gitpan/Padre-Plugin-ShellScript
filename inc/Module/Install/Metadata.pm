@@ -94,7 +94,7 @@ foreach my $key (@resource_keys) {
 				grep { $_->[0] eq $key } @{ $self->{values}->{resources} };
 		}
 		return $self->{values}->{resources}->{$key} unless @_;
-		my $uri = shift or die( "Did not provide a value to $key()" );
+		my $uri = shift or die("Did not provide a value to $key()");
 		$self->resources( $key => $uri );
 		return 1;
 	};
@@ -161,7 +161,7 @@ sub dynamic_config {
 sub perl_version {
 	my $self = shift;
 	return $self->{values}->{perl_version} unless @_;
-	my $version = shift or die( "Did not provide a value to perl_version()" );
+	my $version = shift or die("Did not provide a value to perl_version()");
 
 	# Normalize the version
 	$version = $self->_perl_version($version);
@@ -178,7 +178,7 @@ sub all_from {
 	my ( $self, $file ) = @_;
 
 	unless ( defined($file) ) {
-		my $name = $self->name or die( "all_from called with no args without setting name() first" );
+		my $name = $self->name or die("all_from called with no args without setting name() first");
 		$file = join( '/', 'lib', split( /-/, $name ) ) . '.pm';
 		$file =~ s{.*/}{} unless -e $file;
 		unless ( -e $file ) {
@@ -464,7 +464,7 @@ my %license_urls = (
 sub license {
 	my $self = shift;
 	return $self->{values}->{license} unless @_;
-	my $license = shift or die( 'Did not provide a value to license()' );
+	my $license = shift or die('Did not provide a value to license()');
 	$license = __extract_license($license) || lc $license;
 	$self->{values}->{license} = $license;
 

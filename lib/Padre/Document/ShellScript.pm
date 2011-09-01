@@ -1,6 +1,6 @@
 package Padre::Document::ShellScript;
 BEGIN {
-  $Padre::Document::ShellScript::VERSION = '0.02';
+  $Padre::Document::ShellScript::VERSION = '0.03';
 }
 
 # ABSTRACT: Shell script document support for Padre
@@ -52,7 +52,7 @@ Padre::Document::ShellScript - Shell script document support for Padre
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHORS
 

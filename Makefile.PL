@@ -26,9 +26,9 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Padre::Plugin::ShellScript',
   'PREREQ_PM' => {
-    'Padre' => '0.86'
+    'Padre' => '0.89'
   },
-  'VERSION' => '0.02',
+  'VERSION' => '0.03',
   'test' => {
     'TESTS' => 't/*.t'
   }

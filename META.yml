@@ -17,11 +17,11 @@ meta-spec:
   version: 1.4
 name: Padre-Plugin-ShellScript
 requires:
-  Padre: 0.86
+  Padre: 0.89
 resources:
   homepage: http://padre.perlide.org
   repository: http://svn.perlide.org/padre/trunk/Padre-Plugin-ShellScript/
-version: 0.02
+version: 0.03
 x_Dist_Zilla:
   plugins:
     -
